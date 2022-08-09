@@ -1,0 +1,63 @@
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+.container{
+    border: 3px solid green;
+    padding: 15px;
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+        'header header header'
+        'sidebar content content'
+        'footer footer footer';
+}
+.container div{
+    padding: 20px;
+    border: 1px solid #564334;
+} 
+#header{
+    grid-area:header;
+    text-align: center;
+    background-color: black;
+    color: #ddd;
+}
+
+h3{text-align: center;
+    font-weight: bold;
+    color: green;
+    font-size: 24pt;
+    padding: 30px;
+}
+#sidebar{
+    grid-area:sidebar;
+    height: auto;
+    width: auto;
+    background-color: #564334;    
+}
+a:link, a:visited {
+    color: #564334;
+    text-decoration: none;
+}
+#content{
+    grid-area:content;
+    background-image: url("../img/wavy-background-with-copy-space_52683-65230.webp");
+    width:auto;
+    background-size: cover;
+    
+}
+table, th, td {
+    border: 2px solid #3b1d06;
+    column-width: auto;
+    margin: 0 auto;
+}
+#itens_tabela td{
+    text-align: center;
+    width: 300px;
+    height: 60px;    
+    font-size: 16pt;
+}
+a:hover {background-color: rgb(104, 129, 88);}
+
+#footer{
+    grid-area:footer;
+}
